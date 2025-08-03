@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio TKJ</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <div class="profile">
+            <img src="assets/ADI.jpg" alt="Professional network technician profile" class="profile-img">
+            <h2>Nama Lengkap</h2>
+            <p>Teknisi Jaringan Profesional</p>
+        </div>
+        
+        <nav>
+            <div class="nav-inner-vertical">
+                <ul>
+                    <li><a href="#about" class="active">Tentang Saya</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#contact">Hubungi</a></li>
+                </ul>
+                <button id="dark-toggle" aria-label="Toggle dark mode">
+                    <span id="toggle-icon">
+                        <!-- Sun SVG (default, for dark mode) -->
+                        <svg id="icon-sun" width="22" height="22" fill="none" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="5" fill="#facc15"/>
+                            <g stroke="#facc15" stroke-width="2">
+                                <path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/>
+                                <path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/>
+                                <path d="M4.93 19.07l1.41-1.41"/><path d="M17.66 6.34l1.41-1.41"/>
+                            </g>
+                        </svg>
+                        <!-- Moon SVG (for light mode) -->
+                        <svg id="icon-moon" width="22" height="22" fill="none" viewBox="0 0 24 24" style="display:none;">
+                            <path fill="#2563eb" d="M21 12.79A9 9 0 0 1 12.79 3a7 7 0 1 0 8.21 9.79z"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <!-- Instagram SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="icon-instagram">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5a5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+                <!-- LinkedIn SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="icon-linkedin">
+                    <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="GitHub">
+                <!-- GitHub SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="icon-github">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.5.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                </svg>
+            </a>
+        </div>
+    </aside>
+    
+    <main>
+        <section id="about">
+            <h1>Tentang Saya</h1>
+            <p>Saya seorang profesional Teknisi Komputer dan Jaringan dengan pengalaman lebih dari 5 tahun di bidang IT infrastructure. Spesialisasi saya meliputi instalasi, konfigurasi, dan pemeliharaan jaringan komputer baik wired maupun wireless.</p>
+            <p>Saya memiliki sertifikasi CCNA dan MTCNA yang mendukung keterampilan teknis saya dalam menangani berbagai perangkat jaringan dari berbagai vendor.</p>
+        </section>
+        
+        <section id="skills">
+            <h1>Keahlian Teknis</h1>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <!-- Network SVG -->
+                        <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><path fill="#2563eb" d="M12 2a5 5 0 0 1 5 5c0 2.5-2 4.5-5 4.5S7 9.5 7 7a5 5 0 0 1 5-5zm0 11c3.87 0 7 1.57 7 3.5V20a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3.5C5 14.57 8.13 13 12 13z"/></svg>
+                    </div>
+                    <div class="skill-content">
+                        <h2>Jaringan Komputer</h2>
+                        <p>Installasi & konfigurasi router, switch, access point</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <!-- Security SVG -->
+                        <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><path fill="#2563eb" d="M12 2l7 4v6c0 5.25-3.75 9.92-7 10-3.25-.08-7-4.75-7-10V6l7-4zm0 2.18L6 6.09v5.91c0 4.25 2.94 8.13 6 8.18 3.06-.05 6-3.93 6-8.18V6.09l-6-1.91zm0 3.82a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+                    </div>
+                    <div class="skill-content">
+                        <h2>Keamanan Jaringan</h2>
+                        <p>Firewall configuration, VPN setup, network monitoring</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <!-- Server SVG -->
+                        <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="2" fill="#2563eb"/><rect x="3" y="14" width="18" height="6" rx="2" fill="#2563eb" opacity="0.7"/><circle cx="7" cy="7" r="1" fill="#fff"/><circle cx="7" cy="17" r="1" fill="#fff"/></svg>
+                    </div>
+                    <div class="skill-content">
+                        <h2>Administrasi Server</h2>
+                        <p>Windows & Linux server management</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <!-- Cloud SVG -->
+                        <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><path fill="#2563eb" d="M17.5 18a4.5 4.5 0 0 0 0-9c-.29 0-.57.02-.85.07A5.5 5.5 0 1 0 6.5 18h11z"/></svg>
+                    </div>
+                    <div class="skill-content">
+                        <h2>Cloud Computing</h2>
+                        <p>Setup dan management cloud infrastructure</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <!-- Troubleshooting SVG -->
+                        <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#2563eb"/><path d="M12 8v4" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16" r="1" fill="#fff"/></svg>
+                    </div>
+                    <div class="skill-content">
+                        <h2>Troubleshooting</h2>
+                        <p>Network diagnostic & problem solving</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <!-- IoT SVG -->
+                        <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2" fill="#2563eb"/><circle cx="12" cy="12" r="2" fill="#fff"/></svg>
+                    </div>
+                    <div class="skill-content">
+                        <h2>IoT Devices</h2>
+                        <p>Smart devices configuration & integration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h1>Hubungi Saya</h1>
+            
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>teknisi@example.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Telepon</strong>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Alamat</strong>
+                        <p>Jl. Teknologi No. 123, Jakarta</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subjek</label>
+                    <input type="text" id="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // Inisialisasi EmailJS (ganti dengan User ID Anda)
+        (function() {
+            emailjs.init('YOUR_USER_ID');
+        })();
+        
+        // Fungsi untuk mengirim email
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const params = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Ganti dengan Service ID dan Template ID Anda
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', params)
+                .then(function(response) {
+                    alert('Pesan berhasil dikirim!');
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    alert('Gagal mengirim pesan: ' + error);
+                });
+        });
+        
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelectorAll('nav a').forEach(a => {
+                    a.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 20,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Dark mode toggle
+        const toggleBtn = document.getElementById('dark-toggle');
+        const iconSun = document.getElementById('icon-sun');
+        const iconMoon = document.getElementById('icon-moon');
+        const body = document.body;
+
+        function setDarkMode(on) {
+            if (on) {
+                body.classList.add('dark-mode');
+                iconSun.style.display = 'none';
+                iconMoon.style.display = '';
+                // Toggle button background: terang di dark mode
+                toggleBtn.style.background = '#facc15';
+                toggleBtn.style.color = '#181f2a';
+            } else {
+                body.classList.remove('dark-mode');
+                iconSun.style.display = '';
+                iconMoon.style.display = 'none';
+                // Toggle button background: gelap di light mode
+                toggleBtn.style.background = '#2563eb';
+                toggleBtn.style.color = '#fff';
+            }
+            localStorage.setItem('theme', on ? 'dark' : 'light');
+        }
+
+        // Load theme from localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            setDarkMode(true);
+        } else {
+            setDarkMode(false);
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            setDarkMode(!body.classList.contains('dark-mode'));
+        });
+    </script>
+    </body>
+    </html>
+</html>
